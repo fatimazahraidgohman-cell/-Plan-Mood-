@@ -1,0 +1,240 @@
+/* Reset et base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blanc-doux: #fefefe;
+    --rose-tres-pale: #fff5f8;
+    --rose-doux: #ffd6e7;
+    --bleu-ciel: #e6f7ff;
+    --bleu-doux: #b3e0ff;
+    --vert-menthe: #e0f7e9;
+    --vert-doux: #a8e6cf;
+    --texte-doux: #5a5a5a;
+    --texte-fonce: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--texte-doux);
+    background: linear-gradient(135deg, var(--blanc-doux) 0%, var(--rose-tres-pale) 50%, var(--bleu-ciel) 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header doux */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid var(--rose-doux);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--texte-fonce);
+    font-weight: 300;
+}
+
+nav a {
+    color: var(--texte-doux);
+    text-decoration: none;
+    margin-left: 25px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+
+nav a:hover {
+    background: var(--rose-doux);
+    color: var(--texte-fonce);
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: transparent;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: var(--texte-fonce);
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--texte-doux);
+    margin-bottom: 2rem;
+}
+
+.motivation-quote {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--vert-doux);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.motivation-quote p {
+    font-style: italic;
+    color: var(--texte-doux);
+    margin: 0;
+}
+
+/* Cartes de fonctionnalités */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 214, 231, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: var(--texte-fonce);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.feature-card p {
+    color: var(--texte-doux);
+    margin-bottom: 1.5rem;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--rose-doux) 0%, var(--bleu-doux) 100%);
+    color: var(--texte-fonce);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight: 400;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(179, 224, 255, 0.4);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--bleu-doux);
+    color: var(--texte-doux);
+}
+
+.btn-outline:hover {
+    background: var(--bleu-doux);
+    color: var(--texte-fonce);
+}
+
+/* Section motivation */
+.daily-motivation {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 3rem 0;
+    text-align: center;
+    border: 1px solid rgba(168, 230, 207, 0.3);
+}
+
+.daily-motivation h3 {
+    color: var(--texte-fonce);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.motivation-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.motivation-card p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--texte-doux);
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid var(--rose-doux);
+}
+
+footer p {
+    color: var(--texte-doux);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav {
+        margin-top: 1rem;
+    }
+    
+    nav a {
+        margin: 0 10px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
