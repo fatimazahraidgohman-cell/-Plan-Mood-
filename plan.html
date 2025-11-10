@@ -59,7 +59,6 @@
                 </tr>
             </thead>
             <tbody id="tasks-container">
-                <!-- Les tâches seront ajoutées ici dynamiquement -->
                 <tr>
                     <td>Lundi</td>
                     <td class="task-content">Révision cours Mathématiques</td>
@@ -83,4 +82,21 @@
 
         <section class="weekly-reflection">
             <h3>🌼 Réflexion de la semaine</h3>
-            <textarea id="reflection-text" placeholder="Comment te sens-tu par rapport à cette semaine ? Qu'as-tu appris ?
+            <textarea id="reflection-text" placeholder="Comment te sens-tu par rapport à cette semaine ? Qu'as-tu appris ?..." class="reflection-input"></textarea>
+            <button onclick="saveReflection()" class="btn">Sauvegarder mes réflexions</button>
+        </section>
+
+        <div class="back-link">
+            <a href="index.html" class="btn">← Retour à l'accueil</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>✨ Créé avec tendresse pour ton équilibre quotidien</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
